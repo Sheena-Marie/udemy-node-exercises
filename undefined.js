@@ -19,14 +19,13 @@
 //   console.log('x is undefined!');
 // }
 
-var name = 'Sheena';
-
-console.log(name);
-
 function greetUser(name) {
   if (typeof name === 'undefined') {
     console.log('Hello world!');
   } else {
-    console.log('Hello Sheena');
+    console.log('Hello ' + name + '!');
   }
 }
+
+greetUser('Sheena');
+greetUser();
